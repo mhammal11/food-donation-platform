@@ -1,0 +1,32 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007ACC; /* Blue */
+    color: #fff;
+    padding: 10px;
+  }
+  
+  .navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 5px 10px;
+    color: #fff;
+    text-decoration: none; /* Remove hyperlink styling */
+  }
+  
+  .navbar-logo:hover {
+    color: #fff; /* Set the color on hover */
+  }
+  
+  .navbar-links {
+    display: flex;
+    align-items: center; /* Align links vertically */
+    gap: 20px;
+  }
+  
+  .navbar-links a {
+    text-decoration: none;
+    color: #fff;
+  }
+ 

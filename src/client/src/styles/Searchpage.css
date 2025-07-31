@@ -1,0 +1,325 @@
+.donor-results {
+    width: 80%;
+    margin: auto;
+    flex: 3;
+    margin-left: 10%;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  table th,
+  table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+
+  .donor-section {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+  
+  .donor-header {
+    width: 100%;
+    padding: 10px;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    color: #000000;
+  }
+  
+  .donor-header:hover {
+    background-color: #007ACC;
+    color: white;
+  }
+  
+  span {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .donor-header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .donor-details-left {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .donor-name {
+    font-weight: bold;
+  }
+  
+  .expand-arrow {
+    font-size: 20px;
+    margin-left: auto;
+  }
+  
+  .donor-details {
+    display: none;
+    padding: 10px;
+  }
+  
+  .donor-details table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .add-item-button {
+    background-color: #007ACC;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: smaller;
+  }
+
+  .confirm-button {
+    background-color: #00cc3d;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5%;
+
+  }
+
+  .cart-box {
+    flex: 1.25;
+    border: solid;
+    border-radius: 5px;
+    border-color: #ccc;
+    padding: 10px;
+    width: 300px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 25px;
+  }
+
+  .cart-title {
+    text-align: center;
+  }
+  
+  /* Styles for the modal */
+  .add-item-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 400px;
+    width: 100%;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="number"],
+  .form-group input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+
+  .add-item-form {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f2f2f2; /* Background color for the form container */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow for a card-like effect */
+  }
+
+
+  .add-item-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .close-button {
+    background-color: #ff3333; /* Red background color for the Close button */
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px; /* Add space between buttons */
+  }
+
+  .remove-button {
+    width: 100%; /* Set the width of the button */
+    height: 100%; /* Set the height of the button */
+    border-radius: 100%; /* Make the button circular */
+    background-color: red; /* Set the background color to red */
+    color: white; /* Set text color to white, assuming you want white text on a red button */
+    border: none; /* Remove border */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    font-size: 15px; /* Set the font size */
+    display: flex;
+    justify-content: center;
+  }
+
+  .edit-reserve-quantity {
+    padding: 5px; /* Add padding for better visual appearance */
+    border: 1px solid #ccc; /* Add a border with a light gray color */
+    border-radius: 2px; /* Add a slight border-radius for a softer look */
+    font-size: 14px; /* Set the font size */
+    width: 50%;
+  }
+
+  .reserve-button {
+    background-color: rgb(51, 99, 255); /* Red background color for the Close button */
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px; /* Add space between buttons */
+  }
+  
+  .close-button:hover {
+    background-color: #ff0000; /* Darker red on hover */
+  }
+s
+
+  
+  .donor-details th,
+  .donor-details td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    width: 50%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  /* Styling for the expanded state */
+  .donor-section.expanded .donor-details {
+    display: block;
+    background-color: #fff;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  button {
+    background-color: #007ACC; /* Blue button background color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #005fa6; /* Darker blue on hover */
+  }
+
+  .reserve-header {
+    display: block;
+    background-color: #ffffff53;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .reserve-details {
+    display: block;
+    background-color: #ffffff53;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .reserve-details table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .reserve-details td {
+    text-align: center; /* Optional: Adjust text alignment if needed */
+    padding: 8px; /* Adjust padding as needed for spacing */
+    border: 1px solid #ddd; /* Optional: Add borders for better visibility */
+  }
+  
+  .reserve-details td {
+    width: calc(100% / 3); /* Set equal width for each header in a three-column table */
+  }
+
+
+  .reserve-header table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .reserve-header td {
+    text-align: center; /* Optional: Adjust text alignment if needed */
+    padding: 8px; /* Adjust padding as needed for spacing */
+    border: 1px solid #ddd; /* Optional: Add borders for better visibility */
+    font-weight: bold;
+
+  }
+  
+  .reserve-header td {
+    width: calc(100% / 3); /* Set equal width for each header in a three-column table */
+  }
+
+
+
+
+
+
+  .search-input {
+    border: 1px solid #000000;
+    margin-bottom: 10px;
+    width: 20%;
+    height: 20px;
+  }
+
+  .sort-distance {
+    margin-left: 10px;
+  }
+
+  .tag-options {
+    margin-bottom: 10px;
+  }
+  

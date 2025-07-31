@@ -1,0 +1,57 @@
+.create-profile-page form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background: #fff;
+}
+
+.create-profile-page form label {
+  margin-top: 20px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+}
+
+.create-profile-page form input[type="text"],
+.create-profile-page form input[type="email"],
+.create-profile-page form input[type="datetime-local"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.create-profile-page form input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 10px;
+}
+
+.create-profile-page form input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* responsiveness */
+@media (max-width: 768px) {
+  .create-profile-page form {
+    padding: 10px;
+  }
+
+  .create-profile-page form label {
+    font-size: 14px;
+  }
+
+  .create-profile-page form input[type="submit"] {
+    padding: 10px;
+  }
+}

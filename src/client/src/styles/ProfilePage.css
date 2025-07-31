@@ -1,0 +1,45 @@
+.profile-container {
+    margin: 20px;
+  }
+  
+.profile-logo {
+  width: 25%;
+  height: 25%;
+  margin-top: 20px;
+}
+
+.profile-layout {
+  display: flex;
+  align-items: center;
+}
+
+.profile-container table {
+  width: 40%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.profile-container th, .profile-container td {
+  border: 0;
+  padding: 8px;
+  text-align: left;
+}
+
+.hours tr td {
+  padding-left: 0;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.top {
+  vertical-align: top;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+}

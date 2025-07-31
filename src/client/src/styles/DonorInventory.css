@@ -1,0 +1,183 @@
+.donor-inventory {
+    margin: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+table th,
+table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* Add these CSS rules to set a fixed size for the images */
+.inventory-item-image {
+    width: 150px;
+    /* Adjust the width to your desired size */
+    height: 150px;
+    /* Adjust the height to your desired size */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.add-item-form {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    /* Background color for the form container */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* Box shadow for a card-like effect */
+}
+
+.add-item-form h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #007ACC;
+    /* Blue button background color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #005fa6;
+    /* Darker blue on hover */
+}
+
+button.sign-out-button {
+    background-color: #ff3333;
+}
+
+th.action-header {
+    width: 100px;
+    /* Adjust the width as needed */
+}
+
+td.action-cell {
+    width: 100px;
+    /* Adjust the width as needed */
+    text-align: center;
+    /* Center the content horizontally in the cell */
+}
+
+.add-item-button {
+    background-color: #007ACC;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+/* Styles for the modal */
+.add-item-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.add-item-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-button {
+    background-color: #ff3333;
+    /* Red background color for the Close button */
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    /* Add space between buttons */
+}
+
+.close-button:hover {
+    background-color: #ff0000;
+    /* Darker red on hover */
+}
+
+.remove-item-button {
+    width: 100%;
+    height: 40px;
+    margin-top: 5px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #d83939;
+}
+
+.remove-item-button:hover {
+    background-color: #ba3030;
+}
+
+.edit-item-button {
+    width: 100%;
+    height: 40px;
+    margin-top: auto;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #37cc5f;
+}
+
+.edit-item-button:hover {
+    background-color: #2b9e49;
+}
